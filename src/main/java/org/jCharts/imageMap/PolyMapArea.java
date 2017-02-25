@@ -63,7 +63,8 @@ public final class PolyMapArea extends ImageMapArea implements Serializable
 	 *
 	 * @param numberOfPoints
 	 * @param value
-	 * @param areaType
+	 * @param xAxisLabel
+	 * @param legendLabel
 	 ****************************************************************************************/
 	public PolyMapArea( int numberOfPoints, double value, String xAxisLabel, String legendLabel )
 	{

@@ -135,37 +135,6 @@ public class TextTagGroup implements HTMLTestable, Serializable
 	}
 
 
-	/******************************************************************************************
-	 * Calculates the width and height needed by the passed String when rendered
-	 *
-	 //	 * @param iDataSeries
-	 /	 * @param font
-	 //	 * @param fontRenderContext
-	 *******************************************************************************************
-	 public void processLabels( IDataSeries iDataSeries)	{
-	 //LOOP
-	 for( int i = 0; i < iDataSeries.getNumberOfXAxisLabels(); i++ )
-	 {
-	 this.axisLabelProcessor.processLabel( iDataSeries.getXAxisLabel( i ), axisLabelFont, fontRenderContext );
-	 }
-
-
-	 TextLayout textLayout = new TextLayout( label, font, fontRenderContext );
-
-	 //---WIDTH
-	 this.labelWidths[ counter ] = textLayout.getAdvance();
-	 this.widestLabel = Math.max( this.labelWidths[ counter ], this.widestLabel );
-	 this.totalLabelWidths += this.labelWidths[ counter ];
-
-	 //---HEIGHT
-	 this.labelHeights[ counter ] = textLayout.getAscent() + textLayout.getDescent();
-	 this.tallestLabel = Math.max( this.labelHeights[ counter ], this.tallestLabel );
-
-	 //---need this to offset font rendering, as rendering is at the baseline not bottom or top,
-	 this.fontDescent = textLayout.getDescent();
-
-	 this.counter++;
-	 }
 
 
 	 /******************************************************************************************
@@ -223,31 +192,6 @@ public class TextTagGroup implements HTMLTestable, Serializable
 		this.getTextTag( index ).render( g2d, x, y );
 	}
 
-
-	/**********************************************************************************************
-	 * Renders all the text in this group.
-	 *
-	 *
-	 **********************************************************************************************
-	public void renderTag( int index, Graphics2D g2d )
-	{
-		TextTag tag;
-		//Paint p = this.fontColor;
-
-		g2d.setPaint( this. );
-
-		//g2d.setFont( (this.derivedFont == null) ? baseFont : derivedFont );
-
-		for( int i = 0; i < group.size(); i++ )
-		{
-			tag = ( TextTag ) group.get( i );
-			tag.render( g2d, p );
-			// Text tag sets the Paint every time if not null
-			// So, we might save a small bit of time by changing
-			// this to null after first time.
-			p = null;
-		}
-	}
 
 
 	/*********************************************************************************************

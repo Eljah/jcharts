@@ -200,7 +200,7 @@ public abstract class ImageMapArea implements Serializable
 
 
 	/**************************************************************************************************
-	 * Returns a <pre><area shape="..." coords="....."  + mapElementAttributes ></pre> HTML element.
+	 * Returns a <pre>&lt;area shape="..." coords="....."  + mapElementAttributes&gt;</pre> HTML element.
 	 * 	The mapElementAttributes frees this method from having to declare all attributes of the HTML map
 	 *	element.
 	 *

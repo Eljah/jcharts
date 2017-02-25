@@ -89,7 +89,7 @@ public interface IStockChartDataSet extends IAxisPlotDataSet
 
 	/******************************************************************************************
 	 *
-	 * @param boolean
+	 * @return  boolean
 	 *******************************************************************************************/
 	public boolean hasCloseValues();
 
@@ -104,7 +104,7 @@ public interface IStockChartDataSet extends IAxisPlotDataSet
 
 	/******************************************************************************************
 	 *
-	 * @param boolean
+	 * @return  boolean
 	 *******************************************************************************************/
 	public boolean hasOpenValues();
 

@@ -99,39 +99,6 @@ public class TextProcessor
 	}
 
 
-	/******************************************************************************************
-	 * Calculates the width and height needed by the passed String when rendered
-	 *
-	 //	 * @param iDataSeries
-	 /	 * @param font
-	 //	 * @param fontRenderContext
-	 *******************************************************************************************
-	 public void processLabels( IDataSeries iDataSeries)	{
-	 //LOOP
-	 for( int i = 0; i < iDataSeries.getNumberOfXAxisLabels(); i++ )
-	 {
-	 this.axisLabelProcessor.processLabel( iDataSeries.getXAxisLabel( i ), axisLabelFont, fontRenderContext );
-	 }
-
-
-	 TextLayout textLayout = new TextLayout( label, font, fontRenderContext );
-
-	 //---WIDTH
-	 this.labelWidths[ counter ] = textLayout.getAdvance();
-	 this.widestLabel = Math.max( this.labelWidths[ counter ], this.widestLabel );
-	 this.totalLabelWidths += this.labelWidths[ counter ];
-
-	 //---HEIGHT
-	 this.labelHeights[ counter ] = textLayout.getAscent() + textLayout.getDescent();
-	 this.tallestLabel = Math.max( this.labelHeights[ counter ], this.tallestLabel );
-
-	 //---need this to offset font rendering, as rendering is at the baseline not bottom or top,
-	 this.fontDescent = textLayout.getDescent();
-
-	 this.counter++;
-	 }
-
-
 	 /******************************************************************************************
 	 *
 	 *
