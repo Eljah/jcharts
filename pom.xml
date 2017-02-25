@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.eljah</groupId>
     <artifactId>jcharts-gae-compatible</artifactId>
-    <version>1.0</version>
+    <version>0.7-RELEASE</version>
     <name>Jcharts ported to GAE with appengine-awt</name>
     <description>Library allowing to build simple charts on GAE</description>
     <url>https://github.com/Eljah/jcharts</url>
@@ -41,6 +41,7 @@
         <artifactId>batik-dom</artifactId>
         <version>1.6</version>
     </dependency>
+
 </dependencies>
 
     <build>
@@ -50,29 +51,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>3.2</version>
-                <configuration>
-                    <goalPrefix>xmindjbehave</goalPrefix>
-                    <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>mojo-descriptor</id>
-                        <goals>
-                            <goal>descriptor</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>help-goal</id>
-                        <goals>
-                            <goal>helpmojo</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -171,8 +149,9 @@
     </profiles>
     <licenses>
         <license>
-            <name>The Apache License, Version 2.0</name>
+            <name>Apache License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
     <developers>

@@ -182,7 +182,7 @@ public final class ChartTestDriver
 			}
 			else if( EXTENSION.equals( JPEG_LEGACY ) )
 			{
-				JPEGEncoder13.encode( chart, 1.0f, fileOutputStream );
+
 			}
 			else
 			{
